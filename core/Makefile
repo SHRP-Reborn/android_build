@@ -2313,9 +2313,9 @@ $(INTERNAL_RECOVERY_RAMDISK_FILES_TIMESTAMP): $(MKBOOTFS) \
 	cd $(TARGET_RECOVERY_ROOT_OUT) && touch ramdisk-files.txt && touch ramdisk-files.sha256sum && find . | sed "s/.\///" | sed "/lib\/modules\//d" > ramdisk-files.txt
 	cd $(TARGET_RECOVERY_ROOT_OUT) && find -type f | sed "s/.\/ramdisk-files.sha256sum//" | sed "/lib\/modules/d" | sed "/prop.default/d" | xargs sha256sum > ramdisk-files.sha256sum
 	
-### SHRP - STARTING BUILD ###
+### SHRP REBORN - STARTING BUILD ###
 	$(hide) bash $(TOPDIR)build/make/shrp/shrp.sh "$(SHRP_BUILD_VARS)"
-### SHRP - END BUILD ###
+### SHRP REBORN - END BUILD ###
 	$(BOARD_RECOVERY_IMAGE_PREPARE)
 	$(hide) touch $@
 

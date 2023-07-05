@@ -1,6 +1,7 @@
 #!/bin/bash
 ##########################################################################
 #Copyright 2019 - 2020 SKYHAWK RECOVERY PROJECT
+#Copyright 2020 - 2023 SKYHAWK RECOVERY PROJECT REBORN
 #
 #Licensed under the Apache License, Version 2.0 (the "License");
 #you may not use this file except in compliance with the License.
@@ -19,5 +20,5 @@ if [ $MODE == 1 ]; then
     make clean
 fi;
 . build/en*
-lunch omni_$DEVICE-eng
+lunch twrp_$DEVICE-eng
 mka recoveryimage

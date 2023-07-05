@@ -1,6 +1,7 @@
 ##########################################################################
 
 #Copyright 2019 - 2020 SKYHAWK RECOVERY PROJECT
+#Copyright 2020 - 2023 SKYHAWK RECOVERY PROJECT REBORN
 
 #
 
@@ -298,7 +299,7 @@ def main():
 
     sleep(.5)
 
-    print(f'--------------------------------------------------\n{clr.CL_CYN}SHRP BUILDER{clr.CL_RST}\nFor which device you want to build SHRP?\nIF there is not device showing then put device tree first.\n--------------------------------------------------\n\nAvailable Devices -\n{clr.CL_RST}')
+    print(f'--------------------------------------------------\n{clr.CL_CYN}SHRP REBORN BUILDER{clr.CL_RST}\nFor which device you want to build SHRP REBORN?\nIF there is not device showing then put device tree first.\n--------------------------------------------------\n\nAvailable Devices -\n{clr.CL_RST}')
 
     count = 1
 
