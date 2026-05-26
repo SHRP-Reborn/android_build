@@ -49,6 +49,7 @@ addAddonPre $(normalizeVar $(get_build_var SHRP_INC_IN_REC_EXTERNAL_ADDON_6)) $(
 
 #Saving Version Directly in out
 echo $SHRP_BUILD_DATE > $REC_OUT/twres/version
+echo "twres/version" > $REC_OUT/ramdisk-failes.txt
 
 if [[ TW_INCLUDE_REPACKTOOLS = false ]]; then
     cp "${dir}"/vendor/shrp/magiskboot/magiskboot $REC_OUT/system/bin/
